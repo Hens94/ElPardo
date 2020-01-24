@@ -1,0 +1,575 @@
+  1 {
+  2   "definitions": {},
+  3   "$schema": "http://json-schema.org/draft-07/schema#",
+  4   "$id": "http://example.com/root.json",
+  5   "type": "object",
+  6   "title": "The Root Schema",
+  7   "required": [
+  8     "CodigoAgencia",
+  9     "PolizaData"
+ 10   ],
+ 11   "properties": {
+ 12     "CodigoAgencia": {
+ 13       "$id": "#/properties/CodigoAgencia",
+ 14       "type": "integer",
+ 15       "title": "The Codigoagencia Schema",
+ 16       "default": 0,
+ 17       "examples": [
+ 18         505
+ 19       ]
+ 20     },
+ 21     "PolizaData": {
+ 22       "$id": "#/properties/PolizaData",
+ 23       "type": "object",
+ 24       "title": "The Polizadata Schema",
+ 25       "required": [
+ 26         "CodigoRamo",
+ 27         "CodigoProducto",
+ 28         "TipoPolizaId",
+ 29         "NumeroCertificado",
+ 30         "EstadoPolizaId",
+ 31         "FechaInscripcion",
+ 32         "FechaOriginal",
+ 33         "FechaInicial",
+ 34         "FechaVencimiento",
+ 35         "FechaRenovacion",
+ 36         "Plan",
+ 37         "CodigoMoneda",
+ 38         "SumaAsegurada",
+ 39         "FormaPagoId",
+ 40         "PrimaAsegurada",
+ 41         "TipoCuentaId",
+ 42         "CodigoInterno",
+ 43         "CodigoSucursal",
+ 44         "Ejecutivo",
+ 45         "PolizaDataVariable",
+ 46         "PolizaTerceros"
+ 47       ],
+ 48       "properties": {
+ 49         "CodigoRamo": {
+ 50           "$id": "#/properties/PolizaData/properties/CodigoRamo",
+ 51           "type": "string",
+ 52           "title": "The Codigoramo Schema",
+ 53           "default": "",
+ 54           "examples": [
+ 55             "301"
+ 56           ],
+ 57           "pattern": "^(.*)$"
+ 58         },
+ 59         "CodigoProducto": {
+ 60           "$id": "#/properties/PolizaData/properties/CodigoProducto",
+ 61           "type": "string",
+ 62           "title": "The Codigoproducto Schema",
+ 63           "default": "",
+ 64           "examples": [
+ 65             "2"
+ 66           ],
+ 67           "pattern": "^(.*)$"
+ 68         },
+ 69         "TipoPolizaId": {
+ 70           "$id": "#/properties/PolizaData/properties/TipoPolizaId",
+ 71           "type": "integer",
+ 72           "title": "The Tipopolizaid Schema",
+ 73           "default": 0,
+ 74           "examples": [
+ 75             1
+ 76           ]
+ 77         },
+ 78         "NumeroCertificado": {
+ 79           "$id": "#/properties/PolizaData/properties/NumeroCertificado",
+ 80           "type": "string",
+ 81           "title": "The Numerocertificado Schema",
+ 82           "default": "",
+ 83           "examples": [
+ 84             "0"
+ 85           ],
+ 86           "pattern": "^(.*)$"
+ 87         },
+ 88         "EstadoPolizaId": {
+ 89           "$id": "#/properties/PolizaData/properties/EstadoPolizaId",
+ 90           "type": "integer",
+ 91           "title": "The Estadopolizaid Schema",
+ 92           "default": 0,
+ 93           "examples": [
+ 94             2
+ 95           ]
+ 96         },
+ 97         "FechaInscripcion": {
+ 98           "$id": "#/properties/PolizaData/properties/FechaInscripcion",
+ 99           "type": "string",
+100           "title": "The Fechainscripcion Schema",
+101           "default": "",
+102           "examples": [
+103             "2019-02-25T00:00:00"
+104           ],
+105           "pattern": "^(.*)$"
+106         },
+107         "FechaOriginal": {
+108           "$id": "#/properties/PolizaData/properties/FechaOriginal",
+109           "type": "string",
+110           "title": "The Fechaoriginal Schema",
+111           "default": "",
+112           "examples": [
+113             "2019-02-25T00:00:00"
+114           ],
+115           "pattern": "^(.*)$"
+116         },
+117         "FechaInicial": {
+118           "$id": "#/properties/PolizaData/properties/FechaInicial",
+119           "type": "string",
+120           "title": "The Fechainicial Schema",
+121           "default": "",
+122           "examples": [
+123             "2019-02-25T00:00:00"
+124           ],
+125           "pattern": "^(.*)$"
+126         },
+127         "FechaVencimiento": {
+128           "$id": "#/properties/PolizaData/properties/FechaVencimiento",
+129           "type": "string",
+130           "title": "The Fechavencimiento Schema",
+131           "default": "",
+132           "examples": [
+133             "2020-02-24T00:00:00"
+134           ],
+135           "pattern": "^(.*)$"
+136         },
+137         "FechaRenovacion": {
+138           "$id": "#/properties/PolizaData/properties/FechaRenovacion",
+139           "type": "string",
+140           "title": "The Fecharenovacion Schema",
+141           "default": "",
+142           "examples": [
+143             "2019-02-25T00:00:00"
+144           ],
+145           "pattern": "^(.*)$"
+146         },
+147         "Plan": {
+148           "$id": "#/properties/PolizaData/properties/Plan",
+149           "type": "string",
+150           "title": "The Plan Schema",
+151           "default": "",
+152           "examples": [
+153             "2"
+154           ],
+155           "pattern": "^(.*)$"
+156         },
+157         "CodigoMoneda": {
+158           "$id": "#/properties/PolizaData/properties/CodigoMoneda",
+159           "type": "integer",
+160           "title": "The Codigomoneda Schema",
+161           "default": 0,
+162           "examples": [
+163             1
+164           ]
+165         },
+166         "SumaAsegurada": {
+167           "$id": "#/properties/PolizaData/properties/SumaAsegurada",
+168           "type": "string",
+169           "title": "The Sumaasegurada Schema",
+170           "default": "",
+171           "examples": [
+172             "0.00"
+173           ],
+174           "pattern": "^(.*)$"
+175         },
+176         "FormaPagoId": {
+177           "$id": "#/properties/PolizaData/properties/FormaPagoId",
+178           "type": "integer",
+179           "title": "The Formapagoid Schema",
+180           "default": 0,
+181           "examples": [
+182             1
+183           ]
+184         },
+185         "PrimaAsegurada": {
+186           "$id": "#/properties/PolizaData/properties/PrimaAsegurada",
+187           "type": "string",
+188           "title": "The Primaasegurada Schema",
+189           "default": "",
+190           "examples": [
+191             "30.00"
+192           ],
+193           "pattern": "^(.*)$"
+194         },
+195         "TipoCuentaId": {
+196           "$id": "#/properties/PolizaData/properties/TipoCuentaId",
+197           "type": "integer",
+198           "title": "The Tipocuentaid Schema",
+199           "default": 0,
+200           "examples": [
+201             10
+202           ]
+203         },
+204         "CodigoInterno": {
+205           "$id": "#/properties/PolizaData/properties/CodigoInterno",
+206           "type": "string",
+207           "title": "The Codigointerno Schema",
+208           "default": "",
+209           "examples": [
+210             "9925"
+211           ],
+212           "pattern": "^(.*)$"
+213         },
+214         "CodigoSucursal": {
+215           "$id": "#/properties/PolizaData/properties/CodigoSucursal",
+216           "type": "string",
+217           "title": "The Codigosucursal Schema",
+218           "default": "",
+219           "examples": [
+220             "1"
+221           ],
+222           "pattern": "^(.*)$"
+223         },
+224         "Ejecutivo": {
+225           "$id": "#/properties/PolizaData/properties/Ejecutivo",
+226           "type": "string",
+227           "title": "The Ejecutivo Schema",
+228           "default": "",
+229           "examples": [
+230             "yader.cerda"
+231           ],
+232           "pattern": "^(.*)$"
+233         },
+234         "PolizaDataVariable": {
+235           "$id": "#/properties/PolizaData/properties/PolizaDataVariable",
+236           "type": "object",
+237           "title": "The Polizadatavariable Schema",
+238           "required": [
+239             "Sucursal"
+240           ],
+241           "properties": {
+242             "Sucursal": {
+243               "$id": "#/properties/PolizaData/properties/PolizaDataVariable/properties/Sucursal",
+244               "type": "string",
+245               "title": "The Sucursal Schema",
+246               "default": "",
+247               "examples": [
+248                 "1"
+249               ],
+250               "pattern": "^(.*)$"
+251             }
+252           }
+253         },
+254         "PolizaTerceros": {
+255           "$id": "#/properties/PolizaData/properties/PolizaTerceros",
+256           "type": "array",
+257           "title": "The Polizaterceros Schema",
+258           "items": {
+259             "$id": "#/properties/PolizaData/properties/PolizaTerceros/items",
+260             "type": "object",
+261             "title": "The Items Schema",
+262             "required": [
+263               "TipoDocumentoId",
+264               "NumeroDocumento",
+265               "TipoTerceroId",
+266               "PrimerNombre",
+267               "SegundoNombre",
+268               "PrimerApellido",
+269               "SegundoApellido",
+270               "FechaNacimiento",
+271               "SexoId",
+272               "EstadoCivilId",
+273               "TipoRelacionId",
+274               "parentescoid",
+275               "EstadoId",
+276               "FechaInscripcion",
+277               "FechaInicial",
+278               "FechaVencimiento",
+279               "TerceroDataVariable",
+280               "ComunicacionTerceros",
+281               "DireccionTerceros"
+282             ],
+283             "properties": {
+284               "TipoDocumentoId": {
+285                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/TipoDocumentoId",
+286                 "type": "integer",
+287                 "title": "The Tipodocumentoid Schema",
+288                 "default": 0,
+289                 "examples": [
+290                   12
+291                 ]
+292               },
+293               "NumeroDocumento": {
+294                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/NumeroDocumento",
+295                 "type": "string",
+296                 "title": "The Numerodocumento Schema",
+297                 "default": "",
+298                 "examples": [
+299                   "4081102920000H"
+300                 ],
+301                 "pattern": "^(.*)$"
+302               },
+303               "TipoTerceroId": {
+304                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/TipoTerceroId",
+305                 "type": "integer",
+306                 "title": "The Tipoterceroid Schema",
+307                 "default": 0,
+308                 "examples": [
+309                   2
+310                 ]
+311               },
+312               "PrimerNombre": {
+313                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/PrimerNombre",
+314                 "type": "string",
+315                 "title": "The Primernombre Schema",
+316                 "default": "",
+317                 "examples": [
+318                   "DARLING"
+319                 ],
+320                 "pattern": "^(.*)$"
+321               },
+322               "SegundoNombre": {
+323                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/SegundoNombre",
+324                 "type": "string",
+325                 "title": "The Segundonombre Schema",
+326                 "default": "",
+327                 "examples": [
+328                   "DEL CARMEN"
+329                 ],
+330                 "pattern": "^(.*)$"
+331               },
+332               "PrimerApellido": {
+333                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/PrimerApellido",
+334                 "type": "string",
+335                 "title": "The Primerapellido Schema",
+336                 "default": "",
+337                 "examples": [
+338                   "LOAISIGA"
+339                 ],
+340                 "pattern": "^(.*)$"
+341               },
+342               "SegundoApellido": {
+343                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/SegundoApellido",
+344                 "type": "string",
+345                 "title": "The Segundoapellido Schema",
+346                 "default": "",
+347                 "examples": [
+348                   "ORTIZ"
+349                 ],
+350                 "pattern": "^(.*)$"
+351               },
+352               "FechaNacimiento": {
+353                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/FechaNacimiento",
+354                 "type": "string",
+355                 "title": "The Fechanacimiento Schema",
+356                 "default": "",
+357                 "examples": [
+358                   "1992-02-11T00:00:00"
+359                 ],
+360                 "pattern": "^(.*)$"
+361               },
+362               "SexoId": {
+363                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/SexoId",
+364                 "type": "integer",
+365                 "title": "The Sexoid Schema",
+366                 "default": 0,
+367                 "examples": [
+368                   3
+369                 ]
+370               },
+371               "EstadoCivilId": {
+372                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/EstadoCivilId",
+373                 "type": "integer",
+374                 "title": "The Estadocivilid Schema",
+375                 "default": 0,
+376                 "examples": [
+377                   6
+378                 ]
+379               },
+380               "TipoRelacionId": {
+381                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/TipoRelacionId",
+382                 "type": "integer",
+383                 "title": "The Tiporelacionid Schema",
+384                 "default": 0,
+385                 "examples": [
+386                   2
+387                 ]
+388               },
+389               "parentescoid": {
+390                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/parentescoid",
+391                 "type": "integer",
+392                 "title": "The Parentescoid Schema",
+393                 "default": 0,
+394                 "examples": [
+395                   15
+396                 ]
+397               },
+398               "EstadoId": {
+399                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/EstadoId",
+400                 "type": "integer",
+401                 "title": "The Estadoid Schema",
+402                 "default": 0,
+403                 "examples": [
+404                   2
+405                 ]
+406               },
+407               "FechaInscripcion": {
+408                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/FechaInscripcion",
+409                 "type": "string",
+410                 "title": "The Fechainscripcion Schema",
+411                 "default": "",
+412                 "examples": [
+413                   "2019-02-25T00:00:00"
+414                 ],
+415                 "pattern": "^(.*)$"
+416               },
+417               "FechaInicial": {
+418                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/FechaInicial",
+419                 "type": "string",
+420                 "title": "The Fechainicial Schema",
+421                 "default": "",
+422                 "examples": [
+423                   "2019-02-25T00:00:00"
+424                 ],
+425                 "pattern": "^(.*)$"
+426               },
+427               "FechaVencimiento": {
+428                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/FechaVencimiento",
+429                 "type": "string",
+430                 "title": "The Fechavencimiento Schema",
+431                 "default": "",
+432                 "examples": [
+433                   "2020-02-24T00:00:00"
+434                 ],
+435                 "pattern": "^(.*)$"
+436               },
+437               "TerceroDataVariable": {
+438                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/TerceroDataVariable",
+439                 "type": "object",
+440                 "title": "The Tercerodatavariable Schema",
+441                 "required": [
+442                   "Contacto",
+443                   "Direccion"
+444                 ],
+445                 "properties": {
+446                   "Contacto": {
+447                     "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/TerceroDataVariable/properties/Contacto",
+448                     "type": "string",
+449                     "title": "The Contacto Schema",
+450                     "default": "",
+451                     "examples": [
+452                       "88576084"
+453                     ],
+454                     "pattern": "^(.*)$"
+455                   },
+456                   "Direccion": {
+457                     "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/TerceroDataVariable/properties/Direccion",
+458                     "type": "string",
+459                     "title": "The Direccion Schema",
+460                     "default": "",
+461                     "examples": [
+462                       "REPARTO JOSE BENITO ESCBAR CASA COMUNAL 1 1/2 C NORTE"
+463                     ],
+464                     "pattern": "^(.*)$"
+465                   }
+466                 }
+467               },
+468               "ComunicacionTerceros": {
+469                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/ComunicacionTerceros",
+470                 "type": "array",
+471                 "title": "The Comunicacionterceros Schema",
+472                 "items": {
+473                   "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/ComunicacionTerceros/items",
+474                   "type": "object",
+475                   "title": "The Items Schema",
+476                   "required": [
+477                     "PropietarioId",
+478                     "TipoComunicacionId",
+479                     "ValorComunicacion"
+480                   ],
+481                   "properties": {
+482                     "PropietarioId": {
+483                       "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/ComunicacionTerceros/items/properties/PropietarioId",
+484                       "type": "integer",
+485                       "title": "The Propietarioid Schema",
+486                       "default": 0,
+487                       "examples": [
+488                         1
+489                       ]
+490                     },
+491                     "TipoComunicacionId": {
+492                       "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/ComunicacionTerceros/items/properties/TipoComunicacionId",
+493                       "type": "integer",
+494                       "title": "The Tipocomunicacionid Schema",
+495                       "default": 0,
+496                       "examples": [
+497                         3
+498                       ]
+499                     },
+500                     "ValorComunicacion": {
+501                       "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/ComunicacionTerceros/items/properties/ValorComunicacion",
+502                       "type": "string",
+503                       "title": "The Valorcomunicacion Schema",
+504                       "default": "",
+505                       "examples": [
+506                         "88576084"
+507                       ],
+508                       "pattern": "^(.*)$"
+509                     }
+510                   }
+511                 }
+512               },
+513               "DireccionTerceros": {
+514                 "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/DireccionTerceros",
+515                 "type": "array",
+516                 "title": "The Direccionterceros Schema",
+517                 "items": {
+518                   "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/DireccionTerceros/items",
+519                   "type": "object",
+520                   "title": "The Items Schema",
+521                   "required": [
+522                     "PropietarioId",
+523                     "TipoDireccionId",
+524                     "Nivel",
+525                     "Direccion"
+526                   ],
+527                   "properties": {
+528                     "PropietarioId": {
+529                       "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/DireccionTerceros/items/properties/PropietarioId",
+530                       "type": "integer",
+531                       "title": "The Propietarioid Schema",
+532                       "default": 0,
+533                       "examples": [
+534                         1
+535                       ]
+536                     },
+537                     "TipoDireccionId": {
+538                       "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/DireccionTerceros/items/properties/TipoDireccionId",
+539                       "type": "integer",
+540                       "title": "The Tipodireccionid Schema",
+541                       "default": 0,
+542                       "examples": [
+543                         1
+544                       ]
+545                     },
+546                     "Nivel": {
+547                       "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/DireccionTerceros/items/properties/Nivel",
+548                       "type": "string",
+549                       "title": "The Nivel Schema",
+550                       "default": "",
+551                       "examples": [
+552                         "NIC|11|99"
+553                       ],
+554                       "pattern": "^(.*)$"
+555                     },
+556                     "Direccion": {
+557                       "$id": "#/properties/PolizaData/properties/PolizaTerceros/items/properties/DireccionTerceros/items/properties/Direccion",
+558                       "type": "string",
+559                       "title": "The Direccion Schema",
+560                       "default": "",
+561                       "examples": [
+562                         "REPARTO JOSE BENITO ESCBAR CASA COMUNAL 1 1/2 C NORTE"
+563                       ],
+564                       "pattern": "^(.*)$"
+565                     }
+566                   }
+567                 }
+568               }
+569             }
+570           }
+571         }
+572       }
+573     }
+574   }
+575 }
